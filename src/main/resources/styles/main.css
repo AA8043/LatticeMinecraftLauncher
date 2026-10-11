@@ -1,0 +1,18 @@
+.start-game-button {
+    -fx-background-color: linear-gradient(to right, #1664ff, #59a6ff);
+    -fx-background-radius: 6px;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 40, 100, 0.4), 6, 0, 0, 3);
+}
+
+.user-box:hover {
+    -fx-cursor: hand;
+}
+
+.game-box:hover {
+    -fx-cursor: hand;
+}
