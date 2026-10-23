@@ -3,7 +3,6 @@ plugins {
     application
     id("io.freefair.lombok") version "8.6"
     id("org.openjfx.javafxplugin") version "0.1.0"
-    id("com.github.node-gradle.node") version "7.0.2"
 }
 
 group = "org.a8043.lmcl"
@@ -34,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.aa8043:cwafx:1.6.0")
+    implementation("io.github.aa8043:cwafx:1.6.1")
 
     implementation("org.apache.sshd:sshd-core:3.0.0-M5")
     implementation("org.apache.sshd:sshd-sftp:3.0.0-M5")
