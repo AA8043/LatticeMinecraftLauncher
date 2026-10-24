@@ -1,0 +1,272 @@
+{
+    "assetIndex": {
+        "id": "test-asset",
+        "sha1": "0000000000000000000000000000000000000000",
+        "size": 1,
+        "totalSize": 1,
+        "url": "https://example.invalid/asset.json"
+    },
+    "assets": "test-asset",
+    "complianceLevel": 0,
+    "downloads": {
+        "client": {
+            "sha1": "0000000000000000000000000000000000000000",
+            "size": 1,
+            "url": "https://example.invalid/client.jar"
+        },
+        "server": {
+            "sha1": "0000000000000000000000000000000000000000",
+            "size": 1,
+            "url": "https://example.invalid/server.jar"
+        }
+    },
+    "id": "test-version",
+    "javaVersion": {
+        "component": "jre-legacy",
+        "majorVersion": 8
+    },
+    "libraries": [
+        {
+            "downloads": {
+                "artifact": {
+                    "path": "a/b/1/b-1.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/b-1.jar"
+                }
+            },
+            "name": "a:b:1"
+        },
+        {
+            "name": "c:d:2"
+        },
+        {
+            "downloads": {
+                "artifact": {
+                    "path": "e/f/3/f-3.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/f-3.jar"
+                }
+            },
+            "name": "e:f:3",
+            "rules": [
+                {
+                    "action": "allow"
+                },
+                {
+                    "action": "disallow",
+                    "os": {
+                        "name": "osx"
+                    }
+                }
+            ]
+        },
+        {
+            "downloads": {
+                "artifact": {
+                    "path": "g/h/4/h-4.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/h-4.jar"
+                },
+                "classifiers": {
+                    "natives-linux": {
+                        "path": "g/h/4/h-4-natives-linux.jar",
+                        "sha1": "0000000000000000000000000000000000000000",
+                        "size": 1,
+                        "url": "https://example.invalid/h-4-natives-linux.jar"
+                    },
+                    "natives-osx": {
+                        "path": "g/h/4/h-4-natives-osx.jar",
+                        "sha1": "0000000000000000000000000000000000000000",
+                        "size": 1,
+                        "url": "https://example.invalid/h-4-natives-osx.jar"
+                    },
+                    "natives-windows": {
+                        "path": "g/h/4/h-4-natives-windows.jar",
+                        "sha1": "0000000000000000000000000000000000000000",
+                        "size": 1,
+                        "url": "https://example.invalid/h-4-natives-windows.jar"
+                    }
+                }
+            },
+            "extract": {
+                "exclude": [
+                    "META-INF/"
+                ]
+            },
+            "name": "g:h:4",
+            "natives": {
+                "linux": "natives-linux",
+                "osx": "natives-osx",
+                "windows": "natives-windows"
+            },
+            "rules": [
+                {
+                    "action": "allow"
+                },
+                {
+                    "action": "disallow",
+                    "os": {
+                        "name": "osx"
+                    }
+                }
+            ]
+        },
+        {
+            "downloads": {
+                "artifact": {
+                    "path": "i/j/5/j-5.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/j-5.jar"
+                }
+            },
+            "name": "i:j:5",
+            "rules": [
+                {
+                    "action": "allow",
+                    "os": {
+                        "name": "osx"
+                    }
+                }
+            ]
+        },
+        {
+            "downloads": {
+                "classifiers": {
+                    "natives-linux": {
+                        "path": "k/l/6/l-6-natives-linux.jar",
+                        "sha1": "0000000000000000000000000000000000000000",
+                        "size": 1,
+                        "url": "https://example.invalid/l-6-natives-linux.jar"
+                    },
+                    "natives-windows": {
+                        "path": "k/l/6/l-6-natives-windows.jar",
+                        "sha1": "0000000000000000000000000000000000000000",
+                        "size": 1,
+                        "url": "https://example.invalid/l-6-natives-windows.jar"
+                    }
+                }
+            },
+            "extract": {
+                "exclude": [
+                    "META-INF/"
+                ]
+            },
+            "name": "k:l:6",
+            "natives": {
+                "linux": "natives-linux",
+                "windows": "natives-windows"
+            }
+        },
+        {
+            "downloads": {
+                "artifact": {
+                    "path": "m/n/7/n-7.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/n-7.jar"
+                },
+                "classifiers": {
+                    "sources": {
+                        "path": "m/n/7/n-7-sources.jar",
+                        "sha1": "0000000000000000000000000000000000000000",
+                        "size": 1,
+                        "url": "https://example.invalid/n-7-sources.jar"
+                    }
+                }
+            },
+            "name": "m:n:7"
+        },
+        {
+            "downloads": {
+                "artifact": {
+                    "path": "o/p/8/p-8.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/p-8.jar"
+                },
+                "classifiers": {
+                    "natives-osx": {
+                        "path": "o/p/8/p-8-natives-osx.jar",
+                        "sha1": "0000000000000000000000000000000000000000",
+                        "size": 1,
+                        "url": "https://example.invalid/p-8-natives-osx.jar"
+                    },
+                    "sources": {
+                        "path": "o/p/8/p-8-sources.jar",
+                        "sha1": "0000000000000000000000000000000000000000",
+                        "size": 1,
+                        "url": "https://example.invalid/p-8-sources.jar"
+                    }
+                }
+            },
+            "extract": {
+                "exclude": [
+                    "META-INF/"
+                ]
+            },
+            "name": "o:p:8",
+            "natives": {
+                "osx": "natives-osx"
+            },
+            "rules": [
+                {
+                    "action": "allow",
+                    "os": {
+                        "name": "osx"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "optifine:OptiFine:test"
+        },
+        {
+            "name": "net.minecraft:launchwrapper:test"
+        },
+        {
+            "name": "net.minecraftforge:forge:test",
+            "downloads": {
+                "artifact": {
+                    "path": "q/r/9/r-9.jar",
+                    "url": "",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1
+                }
+            }
+        },
+        {
+            "name": "q:r:9",
+            "downloads": {
+                "artifact": {
+                    "path": "q/r/9/r-9.jar",
+                    "url": "https://example.invalid/r-9.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1
+                }
+            }
+        }
+    ],
+    "logging": {
+        "client": {
+            "argument": "-Dlog4j.configurationFile=${path}",
+            "file": {
+                "id": "client-test.xml",
+                "sha1": "0000000000000000000000000000000000000000",
+                "size": 1,
+                "url": "https://example.invalid/client-test.xml"
+            },
+            "type": "log4j2-xml"
+        }
+    },
+    "mainClass": "net.minecraft.launchwrapper.Launch",
+    "minecraftArguments": "--username ${auth_player_name} --version ${version_name} --gameDir ${game_directory} --assetsDir ${assets_root} --assetIndex ${assets_index_name} --uuid ${auth_uuid} --accessToken ${auth_access_token} --userType ${user_type} --versionType ${version_type}",
+    "minimumLauncherVersion": 18,
+    "releaseTime": "2017-09-18T16:39:46+08:00",
+    "time": "2017-09-18T16:39:46+08:00",
+    "type": "release",
+    "clientVersion": "test-version"
+}

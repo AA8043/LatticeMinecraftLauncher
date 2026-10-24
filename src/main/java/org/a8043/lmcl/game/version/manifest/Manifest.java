@@ -1,6 +1,7 @@
 package org.a8043.lmcl.game.version.manifest;
 
 import cn.hutool.json.JSONObject;
+import org.a8043.lmcl.game.launcher.LaunchOptions;
 
 import java.util.List;
 
@@ -15,9 +16,5 @@ public abstract class Manifest {
 
     public abstract int getJavaVersion(JSONObject json);
 
-    public abstract List<String> buildArgs(JSONObject json,
-                                           String userName, String versionName, String gameDir,
-                                           String assetsDir, String assetsIndexName, String uuid,
-                                           String accessToken, String clientId, String xuid,
-                                           String userType, String versionType);
+    public abstract List<String> buildArgs(JSONObject json, LaunchOptions options);
 }

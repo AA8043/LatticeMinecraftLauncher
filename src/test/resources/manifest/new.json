@@ -1,0 +1,185 @@
+{
+    "assetIndex": {
+        "id": "test-asset",
+        "sha1": "0000000000000000000000000000000000000000",
+        "size": 1,
+        "totalSize": 1,
+        "url": "https://example.invalid/asset.json"
+    },
+    "assets": "test-asset",
+    "id": "test-version",
+    "javaVersion": {
+        "component": "java-runtime-gamma",
+        "majorVersion": 17
+    },
+    "mainClass": "cpw.mods.bootstraplauncher.BootstrapLauncher",
+    "type": "release",
+    "clientVersion": "test-version",
+    "minimumLauncherVersion": 21,
+    "arguments": {
+        "game": [
+            "--username",
+            "${auth_player_name}",
+            "--version",
+            "${version_name}",
+            "--gameDir",
+            "${game_directory}",
+            "--assetsDir",
+            "${assets_root}",
+            "--assetIndex",
+            "${assets_index_name}",
+            "--uuid",
+            "${auth_uuid}",
+            "--accessToken",
+            "${auth_access_token}",
+            "--clientId",
+            "${clientid}",
+            "--xuid",
+            "${auth_xuid}",
+            "--userType",
+            "${user_type}",
+            "--versionType",
+            "${version_type}",
+            {
+                "rules": [
+                    {
+                        "action": "allow",
+                        "features": {
+                            "is_demo_user": true
+                        }
+                    }
+                ],
+                "value": "--demo"
+            },
+            {
+                "rules": [
+                    {
+                        "action": "allow",
+                        "features": {
+                            "has_custom_resolution": true
+                        }
+                    }
+                ],
+                "value": [
+                    "--width",
+                    "${resolution_width}",
+                    "--height",
+                    "${resolution_height}"
+                ]
+            },
+            {
+                "rules": [
+                    {
+                        "action": "allow",
+                        "features": {
+                            "has_quick_plays_support": true
+                        }
+                    }
+                ],
+                "value": [
+                    "--quickPlayPath",
+                    "${quickPlayPath}"
+                ]
+            },
+            {
+                "rules": [
+                    {
+                        "action": "allow",
+                        "features": {
+                            "is_quick_play_singleplayer": true
+                        }
+                    }
+                ],
+                "value": [
+                    "--quickPlaySingleplayer",
+                    "${quickPlaySingleplayer}"
+                ]
+            },
+            {
+                "rules": [
+                    {
+                        "action": "allow",
+                        "features": {
+                            "is_quick_play_multiplayer": true
+                        }
+                    }
+                ],
+                "value": [
+                    "--quickPlayMultiplayer",
+                    "${quickPlayMultiplayer}"
+                ]
+            },
+            {
+                "rules": [
+                    {
+                        "action": "allow",
+                        "features": {
+                            "is_quick_play_realms": true
+                        }
+                    }
+                ],
+                "value": [
+                    "--quickPlayRealms",
+                    "${quickPlayRealms}"
+                ]
+            }
+        ]
+    },
+    "libraries": [
+        {
+            "name": "c:d:2"
+        },
+        {
+            "name": "a:b:1",
+            "downloads": {
+                "artifact": {
+                    "path": "a/b/1/b-1.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/b-1.jar"
+                }
+            }
+        },
+        {
+            "name": "e:f:3",
+            "downloads": {
+                "artifact": {
+                    "path": "e/f/3/f-3.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/f-3.jar"
+                }
+            },
+            "rules": [
+                {
+                    "action": "allow"
+                },
+                {
+                    "action": "disallow",
+                    "os": {
+                        "name": "osx"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "org.lwjgl:lwjgl:3.3.1:natives-macos",
+            "downloads": {
+                "artifact": {
+                    "path": "org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-macos.jar",
+                    "sha1": "0000000000000000000000000000000000000000",
+                    "size": 1,
+                    "url": "https://example.invalid/lwjgl-3.3.1-natives-macos.jar"
+                }
+            },
+            "rules": [
+                {
+                    "action": "allow",
+                    "os": {
+                        "name": "osx"
+                    }
+                }
+            ]
+        }
+    ]
+}
