@@ -7,5 +7,5 @@ public interface Step {
 
     Image getIcon();
 
-    void execute(StepStatus status, StepContext context);
+    void execute(StepStatus status, StepContext context) throws Exception;
 }
